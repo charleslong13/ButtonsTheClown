@@ -1,0 +1,24 @@
+{
+  "clowns": [],
+  "assignments": [],
+  "requests": [
+    {
+      "nameOfParent": "Bob",
+      "nameOfChild": "Bucky",
+      "numberOfChildren": "50",
+      "address": "103 real fake address drive",
+      "reservationDate": "2021-11-22",
+      "resDuration": "3",
+      "id": 1
+    },
+    {
+      "nameOfParent": "Big Dan Sr.",
+      "nameOfChild": "Big Dan Jr.",
+      "numberOfChildren": "100",
+      "address": "423 forest hills drive ",
+      "reservationDate": "2021-11-30",
+      "resDuration": "5",
+      "id": 2
+    }
+  ]
+}
