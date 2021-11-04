@@ -1,5 +1,16 @@
 {
-  "clowns": [],
+  "clowns": [
+    {
+      "clownId": "1",
+      "requestId": "1",
+      "id": 1
+    },
+    {
+      "clownId": "2",
+      "requestId": "1",
+      "id": 2
+    }
+  ],
   "assignments": [],
   "requests": [
     {
@@ -19,6 +30,15 @@
       "reservationDate": "2021-11-30",
       "resDuration": "5",
       "id": 2
+    },
+    {
+      "nameOfParent": "Rusty",
+      "nameOfChild": "Mater",
+      "numberOfChildren": "3",
+      "address": "901 maple circle ",
+      "reservationDate": "2021-12-28",
+      "resDuration": "10",
+      "id": 3
     }
   ]
 }

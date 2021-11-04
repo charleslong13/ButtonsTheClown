@@ -1,5 +1,7 @@
 const applicationState = {
-    requests: []
+    requests: [],
+    clowns: [
+        {id: 1, name:"Buttons the Clown"}, {id: 2, name: "Lollipop the Clown"} ]
 }
 
 const mainContainer = document.querySelector("#container")
@@ -19,6 +21,10 @@ export const fetchRequests = () => {
 
 export const getRequests = () => {
     return applicationState.requests.map(request => ({...request}))
+}
+
+export const getClowns = () => {
+    return applicationState.clowns.map(request => ({...request}))
 }
 
 export const sendRequest = (ServiceRequest) => {
@@ -45,4 +51,21 @@ export const deleteRequest = (id) => {
                 mainContainer.dispatchEvent(new CustomEvent("stateChanged"))
             }
         )
+}
+
+export const sendClowns = (Clown) => {
+    const fetchOptions = {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(Clown)
+    }
+
+
+    return fetch(`${API}/clowns`, fetchOptions)
+    .then(response => response.json())
+    .then(() => {
+        mainContainer.dispatchEvent(new CustomEvent("stateChanged"))
+    })
 }

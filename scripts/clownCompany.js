@@ -13,5 +13,5 @@ export const clownCompany = () => {
             <h2>Reservation Requests</h2>
             ${Requests()}
         </section>
-    `
+        `
 }
